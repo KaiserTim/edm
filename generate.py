@@ -9,6 +9,8 @@
 "Elucidating the Design Space of Diffusion-Based Generative Models"."""
 
 import os
+os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
+os.environ["CUDA_VISIBLE_DEVICES"] = "0,1,3"
 import re
 import click
 import tqdm
